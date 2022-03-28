@@ -60,12 +60,12 @@ interface Person {
     age: number;
 }
 
-interface Developer extends Person {
-    language: string;
-}
+// interface Developer extends Person {
+//     language: string;
+// }
 
-const captain: Developer = {
-    language: 'ts',
-    age: 28,
-    name: 'jongho'
-}
+// const captin: Developer = {
+//     language: 'ts',
+//     age: 28,
+//     name: 'jongho'
+// }
