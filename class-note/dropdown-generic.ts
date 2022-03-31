@@ -1,31 +1,36 @@
-type Email = {
-    value: string;
+type DropdownItem<T> = {
+    value: T;
     selected: boolean;
 }
 
-const emails: Email[] = [
+// type Email = {
+//     value: string;
+//     selected: boolean;
+// }
+
+const emails: DropdownItem<string>[] = [
     { value: 'naver.com', selected: true},
     { value: 'google.com', selected: true},
     { value: 'hanmail.com', selected: true}
 ]
 
-type ProductNumber = {
-    value: number;
-    selected: boolean
-}
+// type ProductNumber = {
+//     value: number;
+//     selected: boolean
+// }
 
 type TrueFalse = {
     value: boolean;
     selected: boolean;
 }
 
-const numberOfProducts: ProductNumber[] = [
+const numberOfProducts: DropdownItem<number>[] = [
     { value: 1, selected: true},
     { value: 2, selected: false},
     { value: 3, selected: false}
 ]
 
-function createDropdownItem(item: Email | ProductNumber) {
+function createDropdownItem(item: DropdownItem<string> | DropdownItem<number>) {
     const option = document.createElement('option')
 
     option.value = item.value.toString()
