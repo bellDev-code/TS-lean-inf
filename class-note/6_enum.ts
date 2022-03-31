@@ -12,4 +12,26 @@ enum Shoes2 {
 }
 
 const myShoes2 = Shoes2.Nike;
-console.log(myShoes2)
+// console.log(myShoes2)
+
+// 예제
+
+enum Answer {
+    Yes = 'Y',
+    No = 'N'
+}
+
+function askQuestion(answer: Answer) {
+    if(answer === Answer.Yes) {
+        console.log('정답입니다.')
+    }
+    if(answer === Answer.No) {
+        console.log('오답입니다.')
+    }
+}
+
+// enum에서 제공하는 데이터만 값만 넘길 수 있다.
+askQuestion(Answer.Yes)
+// askQuestion('예쓰')
+// askQuestion('y')
+// askQuestion('Yes')
