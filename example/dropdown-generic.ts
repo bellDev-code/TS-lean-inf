@@ -19,10 +19,10 @@ const emails: DropdownItem<string>[] = [
 //     selected: boolean
 // }
 
-type TrueFalse = {
-    value: boolean;
-    selected: boolean;
-}
+// type TrueFalse = {
+//     value: boolean;
+//     selected: boolean;
+// }
 
 const numberOfProducts: DropdownItem<number>[] = [
     { value: 1, selected: true},
